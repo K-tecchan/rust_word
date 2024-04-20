@@ -1,8 +1,9 @@
 mod cli;
 
 use clap::Parser;
-use cli::{Cli, Type};
 use rand::distributions::{Alphanumeric, DistString};
+
+use cli::{Cli, Type};
 
 fn main() {
     let args = Cli::parse();
