@@ -11,7 +11,7 @@ fn main() {
     let mut password = String::new();
 
     for _ in 0..args.len {
-        if rand::random::<u8>() < 192 {
+        if rand::random::<u8>() > 64 {
             password.push(Alphanumeric.sample(&mut rand::thread_rng()) as char);
         } else {
             password.push(
